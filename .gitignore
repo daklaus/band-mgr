@@ -1,0 +1,6 @@
+# Eclipse Project Files #
+.buildpath
+.project
+.classpath
+.settings/
+.externalToolBuilders/
