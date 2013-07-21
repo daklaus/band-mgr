@@ -1,0 +1,1 @@
+pg_dump -h localhost -U klaus cover-band-mgr -a --column-inserts -f insert.sql
