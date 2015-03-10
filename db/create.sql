@@ -36,8 +36,8 @@ CREATE TABLE songs (
 );
 
 CREATE TABLE practice_status (
-	artist VARCHAR(512),
-	title VARCHAR(512),
+	artist VARCHAR(512), -- foreign key to song missing
+	title VARCHAR(512), -- foreign key to song missing
 	instrument VARCHAR(512) REFERENCES instruments(name) ON UPDATE CASCADE,
 	practiced NUMERIC(1) NOT NULL CHECK (practiced BETWEEN 1 AND 5),
 	PRIMARY KEY (artist, title, instrument)
